@@ -1,3 +1,7 @@
+
+"use strict"
+
+
 let numb = 7;
 numb % 2 == 0 && console.log("Juft son");
 numb % 2 != 0 && console.log("Toq son");
@@ -61,10 +65,12 @@ switch (meva) {
     default : console.log("bunday meva yuq edi ertaga olib kelamiz");
 }
 
+
+
 // ==================================================================
 
 
-let bolin=10
+let bolin=7
 
 bolin % 3 == 0 && console.log("3ga bolinadi");
 bolin % 5 == 0 && console.log("5ga bolinadi");
@@ -78,6 +84,39 @@ if (bolin % 3 ==0 && bolin % 5 ==0) {
 } else if (bolin % 5 ==0) {
     console.log("5ga bolinadi va qoldiq qolmaydi");
 } else { console.log("3ga ham 5ga ham bolinmaydi");}
+
+// ===========================================================
+
+let browser="Safari"
+
+if (browser=="Edge") {
+    console.log("You've got the Edge!");
+} else if (browser=="Chrome"){
+
+} else if (browser=="Firefox"){
+    
+} else if (browser=="Safari"){
+    
+} else if (browser=="Opera"){
+    console.log("Okay we support these browsers too");
+}else{
+    console.log("We hope that this page looks ok!");
+}
+
+// ======================================================
+
+
+let login="Employee"
+
+if (login=="Employee") {
+    console.log("Hello");
+}else if (login=="Director") {
+    console.log("Greetings");
+}else if (login=="") {
+    console.log("No login");
+}else {
+    console.log("Failed");
+}
 
 
 
