@@ -110,9 +110,13 @@
 //     console.log("Failed");
 // }
 
+// for loop
+
 for (let i = 1; i <= 10; i++) {
   i % 2 === 0 ? console.log(i, "Juft son") : console.log(i, "Toq son");
 }
+
+// ================================================
 
 let str = "WebBrainAcadAmya";
 
@@ -124,3 +128,27 @@ for (let i = 0; i < str.length; i++) {
 }
 
 console.log("A,a-", result.length);
+
+// ============================================
+
+// count
+
+let count = 0;
+for (let i = 0; i < str.length; i++) {
+    if (str[i] === "a" || (str[i]=== "A")) {
+      count++
+    }
+  }
+
+  console.log("A,a-", count);
+
+//   ============================================
+
+let bigletter  ="WeBbraIN";
+
+for (let i = 0; i < bigletter.length; i++) {
+
+    if (bigletter[i] === bigletter[i].toUpperCase ()) {
+       console.log(bigletter[i]);
+    }
+}
