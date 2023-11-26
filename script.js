@@ -145,10 +145,26 @@ for (let i = 0; i < str.length; i++) {
 //   ============================================
 
 let bigletter  ="WeBbraIN";
+let horizontal = "";
 
 for (let i = 0; i < bigletter.length; i++) {
 
     if (bigletter[i] === bigletter[i].toUpperCase ()) {
-       console.log(bigletter[i]);
+      //  console.log(bigletter[i]);
+      horizontal += bigletter[i]
     }
 }
+
+console.log(horizontal);
+
+
+let reverse = "oxunjon";
+
+let result1 = "";
+
+for(let i = reverse.length -1; i>=0; i--) {
+  // console.log(reverse[i]);
+  result1 += reverse[i]
+}
+
+console.log(result1);
