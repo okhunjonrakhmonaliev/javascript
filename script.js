@@ -1,48 +1,65 @@
-// let myMathpow = (son, daraja) => {
-//     return son ** daraja
+// let user = {
 // }
-// console.log(myMathpow(5,2));
 
-// =========================================
+// user.name = "John",
+// user.surname = "Smith";
+// user.name = "Pete";
+// delete user.name;
 
-// let myMathsqrt = (son) => son ** 0.5
-// console.log(myMathsqrt (64));
+// console.log(user);
 
-// ==========================================
+// ================================
 
-// let myMathcbrt = (son) => son ** (1 / 3);
-// console.log(myMathcbrt(64).toFixed());
+// let schedule = {name:"oxunjon"};
 
-// ==========================================
-
-// let myMathabs = (son) => {
-//     son < 0 && console.log(son * -1);
-//     son > 0 && console.log(son);
+// function isEmpty(obj) {
+//   for (let key in obj) {
+//     return false;
+//   }
+//   return true;
 // }
-// myMathabs(100);
 
-// =============================================
-
-// let myMathfloor = (son) => {
-//     return parseInt(son)
-// }
-// console.log(myMathfloor (15.5));
+// console.log(isEmpty(schedule));
 
 // =====================================
 
-// function oxunjonround(son) {
-//   son >= parseInt(son) + 0.5 && console.log(parseInt(son) + 1);
-//   son < parseInt(son) + 0.5 && console.log(parseInt(son));
+// let salaries = {
+//     John: 100,
+//     Ann: 150,
+//     Pete: 200
 // }
-// oxunjonround(5.6);
 
-// function fozilround(son) {
-//   son >= parseInt(son) + 0.5 && console.log(parseInt(son) + 1);
-//   son < parseInt(son) + 0.5 && console.log(parseInt(son));
+// let sum = 0;
+
+// for (let kalit in salaries) {
+//     sum += salaries[kalit]
 // }
-// fozilround(6.6);
 
-function oxunjonCeil(son) {
-  return son > parseInt(son) && parseInt(son) + 1;
+// console.log(sum);
+
+// ========================================
+
+let menu = {
+    width: 200,
+    height: 300,
+    title: "WBA"
+
 }
-console.log(oxunjonCeil(15.9999));
+
+let multiplyNumeric = (obj) => {
+    // console.log(obj);
+    for (let kalit in obj){
+        // console.log(obj[kalit]);
+        if (typeof obj[kalit] === "number"){
+            obj[kalit] *= 2
+        }
+    }
+}
+
+multiplyNumeric(menu);
+console.log(menu);.
+
+===============================================
+
+
+
