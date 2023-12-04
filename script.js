@@ -1,65 +1,57 @@
-// let user = {
+// let obj = {
+//     id : 1,
+//     name : "WebBrain"
 // }
 
-// user.name = "John",
-// user.surname = "Smith";
-// user.name = "Pete";
-// delete user.name;
+// for (let key in obj){
+//     console.log(key);
+// }
 
-// console.log(user);
+// =============================
 
-// ================================
+// let obj = {
+//   id: 1,
+//   name: "WebBrain",
+// };
 
-// let schedule = {name:"oxunjon"};
+// for (let key in obj) {
+//   if(typeof obj[key] === "number") {
+//       console.log(key);
+//   };
 
-// function isEmpty(obj) {
-//   for (let key in obj) {
-//     return false;
+// }
+
+// ======================================
+
+// let obj = {
+//   id: 1,
+//   name: "WebBrain",
+//   offline: true,
+//   online: true,
+//   individual: false,
+// };
+// newobj = {};
+// for (let key in obj) {
+//   if (typeof obj[key] === "boolean") {
+//     newobj[key] = obj[key];
 //   }
-//   return true;
 // }
 
-// console.log(isEmpty(schedule));
+// console.log(newobj);
 
-// =====================================
+// ==========================================
 
-// let salaries = {
-//     John: 100,
-//     Ann: 150,
-//     Pete: 200
-// }
-
-// let sum = 0;
-
-// for (let kalit in salaries) {
-//     sum += salaries[kalit]
-// }
-
-// console.log(sum);
-
-// ========================================
-
-let menu = {
-    width: 200,
-    height: 300,
-    title: "WBA"
-
+person = {
+    id:1,
+    name:"Oxunjon",
+surname:"Rakhmonaliev",
+ielts:5.5,
+student:true,
+parol:101
 }
 
-let multiplyNumeric = (obj) => {
-    // console.log(obj);
-    for (let kalit in obj){
-        // console.log(obj[kalit]);
-        if (typeof obj[kalit] === "number"){
-            obj[kalit] *= 2
-        }
-    }
+function kirish (parol,name){
+parol === 101 && name === "Oxunjon" ? console.log("hush kelibsiz"):console.log("parol yoki name xato");
 }
 
-multiplyNumeric(menu);
-console.log(menu);.
-
-===============================================
-
-
-
+kirish (102,"Oxunjon")
