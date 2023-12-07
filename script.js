@@ -1,48 +1,17 @@
-let person = {
-  id: 1,
-  name: "Odil",
-  age: 78,
-  child: {
-    id: 1,
-    name: "Ali",
-    age: 48,
-    child: {
-      id: 1,
-      name: "Umar",
-      age: 20,
-    },
-  },
-};
+let pair = "ABBACC";
+let result = "";
 
-let count = 0;
-
-while (true) {
-  if (person) {
-    count = count + person.age
-  }else {
-    break
+for (let i = 0; i < pair.length; i++) {
+  if (pair[i] === pair[i] -1) {
+    result = result + pair[i];
   }
-  person = person.child
+// console.log(pair[i]);
+  
 }
 
-console.log(count);
+console.log(result);
 
-// ============================
+// let toreverce = toArray.reverse();
+// let toString = toreverce.join("");
 
-let arr = [
-    {id: 1, name:"Oxunjon"},
-    {id: 2, name:"Foziljon"},
-    {id: 3, name:"Jaloliddin"},
-    {id: 4, name:"O'tkirbek"}
-]
-const onSearch = (text) =>{
-let arr1 = []
-for (let i=0; i<arr.length; i++){
-if (arr[i].name.includes(text.toLowerCase()) || arr[i].name.includes(text.toUpperCase()) ) {
-    arr1.push(arr[i])
-}
-}
-return arr1
-}
-
-console.log(onSearch("F"));
+// console.log(toString);
