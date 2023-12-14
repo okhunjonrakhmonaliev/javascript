@@ -32,14 +32,51 @@ let cars = [
 
 // updata ===========================================
 
-const UpDatamodel = (data) => {
-  let result = cars.map((value) =>
-    value.id === data.id ? { ...value, [data.type]: data.value } : value
-  );
+// const UpDatamodel = (data) => {
+//   let result = cars.map((value) =>
+//     value.id === data.id ? { ...value, [data.type]: data.value } : value
+//   );
 
-  cars = result;
-};
+//   cars = result;
+// };
 
-UpDatamodel({ id: 5, type: "name", value: "ionic" });
+// UpDatamodel({ id: 5, type: "name", value: "ionic" });
 
-console.log(cars);
+// console.log(cars);
+
+// =============================================
+
+// Math =========================================
+
+// begin1
+let a = 10;
+let P = 4 * a;
+console.log(P);
+
+// begin2
+
+let a1 = 10;
+// let s = ${a1 * a1};
+let s = a1 * a1;
+console.log(s);
+
+// begin3
+
+let a2 = 5;
+let b = 4;
+let S = a2 * b;
+let P1 = 2 *(a2 + b);
+console.log(P1);
+
+// begin4
+let d = 10;
+let L = 3.14 * d;
+console.log(L);
+
+// begin5
+
+let a3 = 5;
+let V = a3 * a3 * a3;
+let S1 = 6 * a3 * a3;
+console.log(V);
+console.log(S1);
