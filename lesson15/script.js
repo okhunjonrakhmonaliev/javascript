@@ -30,12 +30,6 @@
 // console.log(arr); [ 100, 200, 25, <2 empty items>, 10 ]
 // console.log(arr[arr.length - 1]); true
 
-// let arr = [4,10,888,99,100];
-
-// arr.sort((a,b) => a-b);
-
-// console.log(arr[0],arr[arr.length - 1]);
-
 // ============================================
 
 // let arr = ["a", "b", "c"];
@@ -44,8 +38,7 @@
 
 // ======================================
 
-
-let arr = ["oxunjon", "Foziljon", "O'tkirbek", "Jaloliddin aka"];
+// let arr = ["oxunjon", "Foziljon", "O'tkirbek", "Jaloliddin aka"];
 // let arr1 = ["salom"]
 // console.log(arr1.concat(arr,"buni qushdim",555));
 // console.log(arr.slice(0,4)); [ 'oxunjon', 'Foziljon', "O'tkirbek", 'Jaloliddin aka' ]====== copy
@@ -57,23 +50,6 @@ let arr = ["oxunjon", "Foziljon", "O'tkirbek", "Jaloliddin aka"];
 // arr.push("test","test2")
 // arr.pop();
 // arr.unshift("test","test2")
-arr.shift()
-console.log(arr);
+// arr.shift()
+// console.log(arr);
 
-
-
-
-
-
-
-// let arr = [4,10,888,99,100];
-
-// let tostring = arr.join();
-
-// console.log(tostring);
-
-// let arr = ["olma", "nok", "banan", "olma", "anor"];
-
-// function DeleteMeva(name) {}
-
-// DeleteMeva("olma");
