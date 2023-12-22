@@ -12,12 +12,16 @@
 
 // task -2
 
-let arr = ["olma", "nok", "banan", "olma", "anor"];
+// let arr = ["olma", "nok", "banan", "olma", "anor"];
 
-function DeleteMeva(meva) {
-  arr = arr.filter( fruit => fruit !== meva);
-}
+// function DeleteMeva(meva) {
+//   arr = arr.filter( fruit => fruit !== meva);
+// }
 
-DeleteMeva("olma");
+// DeleteMeva("olma");
 
-console.log(arr);
+// console.log(arr);
+
+
+
+
