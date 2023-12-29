@@ -9,4 +9,10 @@ const sum = (n) => {
 
 sum(4);
 
-console.log(res);
+// console.log(res);
+
+
+let arr = ["foziljon","oxunjon","jaloliddin aka","o'tkirbek","shuxrat","madina","sardor"]
+
+// console.log(arr.slice(2,3));
+console.log(arr.splice(3,4));
