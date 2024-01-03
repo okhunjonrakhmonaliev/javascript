@@ -16,7 +16,17 @@
 // // console.log(arr.slice(2,3));
 // console.log(arr.splice(3,4));
 
-let arr = [20, 35, 10, 5, 65, 100];
+// let arr = [20, 35, 10, 5, 65, 100];
 
-let filtered = arr.filter((value, index) => value < 50);
-console.log(filtered);
+// let filtered = arr.filter((value, index) => value < 50);
+// console.log(filtered);
+
+
+
+let str = "4376";
+let sum = 0;
+for(let i=0; i<str.length; i++){
+    sum += +str[i]
+
+}
+console.log(sum);
