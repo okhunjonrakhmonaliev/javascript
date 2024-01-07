@@ -1,61 +1,31 @@
-// Array advanced part
+console.log("started...");
 
-//1
+let server = {
+  id: 1,
+  password: 9999,
+  username: "Test",
+};
 
-// let obj = {
-//     id: 1,
-//     name: 'Odil',
-//     age:78,
-//     child: {
-//         id: 1,
-//         name: 'Ali',
-//         age:48,
-//         child: {
-//             id: 1,
-//             name: 'Umar',
-//             age: 20,
-//             child: {
-//                 age: 100
-//             }
-//         }
-//     }
-// }
+let facebook = (pw, username) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (server.password === pw && server.username === username) {
+        resolve("Welcome to Facebook");
+      } else {
+        reject("Login yoki Pw xato!!!");
+      }
+    }, 2000);
+  });
+};
 
-// let sum = 0;
-// while (true) {
-//     if (obj) {
-//         // console.log(obj.age);
-//         sum += obj.age
-//     } else {
-//         break
-//     }
-//     obj = obj.child
-// }
+async function getData() {
+  try {
+    let user = await facebook(9999, "Test");
+    console.log(user);
+    console.log("Finished...");
+  } catch (err) {
+    console.log(err);
+  }
+}
 
-// console.log(sum);
-
-
-////////////////////////////////////////////
-
-//2
-
-// let arr = [
-//     {id: 1, name: 'Foziljon'},
-//     {id: 2, name: 'Mirshakar'},
-//     {id: 3, name: 'Jaloliddin'},
-//     {id: 4, name: 'Shuxratbek'},
-// ]
-
-// const onSearch = (input) => {
-//     let natija = [];
-    
-//     for (let i = 0; i < arr.length; i++){
-//         if (arr[i].name.toLowerCase().includes(input.toLowerCase())) {
-//             natija.push(arr[i])
-//         }
-//     }
-    
-//     console.log(natija);
-// }
-
-// onSearch('S');
+getData();
