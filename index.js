@@ -30,11 +30,15 @@
 
 // getData();
 
+// fetch API
 
-// fetch API 
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then((res) => res.json())
+  .then((data) => {
+    // console.log(data);
+    data.forEach((user) => {
+      console.log(user.id, user.title);
+    });
+  })
 
-fetch("https://jsonplaceholder.typicode.com/users")
-.then((res) => res.json())
-.then((data) => {
-    console.log(data);
-})
+  .catch((err) => console.log(err));
