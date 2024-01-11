@@ -38,3 +38,45 @@
 
 /////////////////////////////////////////////////////
 
+// const title = document.querySelector("h1");
+// title.innerHTML = "dom mavzusi";
+// title.style.background = "yellow"
+
+////////////////////////////////////////////////
+// children
+
+const ol = document.querySelector("ol");
+
+for (let i = 0; i < ol.children.length; i++) {
+  if (i % 2 === 0) ol.children[i].style.background = "green"
+  else ol.children[i].style.background = "red";
+}
+
+// console.log(title);
+
+/////////////////////////////////////////////////////
+
+// const title = document.querySelector('h1');
+// const btn = document.querySelector('#btn');
+// let isActive = true;
+
+// const onChange = () => {
+    
+//     isActive ? (
+//       title.style.cssText = `
+//       background: red;
+//       color: yellow;
+//       transition: all 1s linear;
+//     `
+//     ) : (
+//       title.style.cssText = `
+//       background: white;
+//       color: black;
+//       transition: all 1s linear;
+//     `
+//     )
+    
+//     isActive = !isActive
+// }
+
+// btn.addEventListener('click', onChange);
